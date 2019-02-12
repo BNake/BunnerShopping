@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jvt-V5-e8c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tDJ-Fy-R4I">
+            <objects>
+                <viewController id="Jvt-V5-e8c" customClass="PageTabLoginAndRegisterAccountViewController" customModule="VIPTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ol6-OK-gLO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0dt-Yk-Vgf" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xfz-sY-McO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hsI-zd-fqr">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsG-xy-ry0">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0dt-Yk-Vgf" firstAttribute="leading" secondItem="aXj-Uy-6xs" secondAttribute="leading" id="5pl-l0-MaB"/>
+                            <constraint firstItem="lsG-xy-ry0" firstAttribute="leading" secondItem="aXj-Uy-6xs" secondAttribute="leading" id="8Ud-yy-Wzo"/>
+                            <constraint firstItem="0dt-Yk-Vgf" firstAttribute="top" secondItem="aXj-Uy-6xs" secondAttribute="top" id="D3S-M6-M5V"/>
+                            <constraint firstItem="lsG-xy-ry0" firstAttribute="bottom" secondItem="aXj-Uy-6xs" secondAttribute="bottom" id="J9h-tZ-JD6"/>
+                            <constraint firstItem="lsG-xy-ry0" firstAttribute="trailing" secondItem="aXj-Uy-6xs" secondAttribute="trailing" id="Xbg-Kg-SnV"/>
+                            <constraint firstItem="lsG-xy-ry0" firstAttribute="top" secondItem="0dt-Yk-Vgf" secondAttribute="bottom" id="ax5-U9-Xdz"/>
+                            <constraint firstAttribute="trailing" secondItem="0dt-Yk-Vgf" secondAttribute="trailing" id="h76-Ew-aEN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aXj-Uy-6xs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="zit-oM-AkR"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="0dt-Yk-Vgf" id="aS4-jp-nH1"/>
+                        <outlet property="containerView" destination="lsG-xy-ry0" id="TqE-Iw-dBj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKi-lR-345" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-22"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9qa-RB-uCB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="irG-7i-NY9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yGa-3j-sUr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jvt-V5-e8c" kind="relationship" relationship="rootViewController" id="oSn-aa-PgF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyT-HN-ZtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="-22"/>
+        </scene>
+    </scenes>
+</document>

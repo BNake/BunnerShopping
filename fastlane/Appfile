@@ -1,0 +1,6 @@
+app_identifier("com.savvycom.viptemplate") # The bundle identifier of your app
+apple_id("hieu.nguyen@savvycomsoftware.com") # Your Apple email address
+
+# fastlane fastlane-credentials add --username daohaiha889@gmail.com --password xxx
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

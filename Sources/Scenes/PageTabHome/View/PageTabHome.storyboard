@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="acR-fL-c3a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page Tab Home View Controller-->
+        <scene sceneID="zzh-99-6bz">
+            <objects>
+                <viewController id="acR-fL-c3a" customClass="PageTabHomeViewController" customModule="VIPTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fx-vf-J2z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pj8-7Y-jas" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gWJ-Cy-dsi"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LzO-Be-vvl">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfD-4x-4c5">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pj8-7Y-jas" firstAttribute="top" secondItem="IDC-rX-wsm" secondAttribute="top" id="0qq-ky-c6l"/>
+                            <constraint firstItem="QfD-4x-4c5" firstAttribute="top" secondItem="Pj8-7Y-jas" secondAttribute="bottom" id="4oF-cZ-GjQ"/>
+                            <constraint firstItem="QfD-4x-4c5" firstAttribute="bottom" secondItem="IDC-rX-wsm" secondAttribute="bottom" id="5oI-Sa-xEW"/>
+                            <constraint firstItem="QfD-4x-4c5" firstAttribute="leading" secondItem="IDC-rX-wsm" secondAttribute="leading" id="9SU-dG-FJp"/>
+                            <constraint firstItem="QfD-4x-4c5" firstAttribute="trailing" secondItem="IDC-rX-wsm" secondAttribute="trailing" id="IVk-ic-EEx"/>
+                            <constraint firstItem="Pj8-7Y-jas" firstAttribute="leading" secondItem="IDC-rX-wsm" secondAttribute="leading" id="MWx-oO-Eso"/>
+                            <constraint firstItem="Pj8-7Y-jas" firstAttribute="trailing" secondItem="IDC-rX-wsm" secondAttribute="trailing" id="Slc-3O-IQ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IDC-rX-wsm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ph0-eN-lpB">
+                        <leftBarButtonItems>
+                            <barButtonItem image="left_menu" id="svk-1Q-PPS">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="logo" id="Nlk-Ez-2Ja"/>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem image="device_menu_mobile_smartphone_icon_24" id="RzC-gP-Iq1">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="ic_shopping_cart_white" id="KdH-EO-f9u">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="ic_search_white" id="K4C-m9-PTP">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonBarView" destination="Pj8-7Y-jas" id="AZ4-Ax-SlS"/>
+                        <outlet property="containerView" destination="QfD-4x-4c5" id="RSh-aW-8b2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4V-wj-t1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="83.208395802098963"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cj8-x0-co3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Xh-Re-YRg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aci-98-45r">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.038073103030287388" blue="0.59406607132877798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="acR-fL-c3a" kind="relationship" relationship="rootViewController" id="cYp-yu-Hrs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tui-VE-ZIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.3999999999999999" y="83.208395802098963"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="device_menu_mobile_smartphone_icon_24" width="18" height="24"/>
+        <image name="ic_search_white" width="24" height="24"/>
+        <image name="ic_shopping_cart_white" width="24" height="24"/>
+        <image name="left_menu" width="20" height="14"/>
+        <image name="logo" width="27" height="27"/>
+    </resources>
+</document>

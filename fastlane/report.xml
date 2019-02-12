@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.007701">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: Switch to ios build_application lane" time="0.001125">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: update_app_identifier" time="0.157091">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: import_certificate" time="0.152837">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: update_project_provisioning" time="0.111232">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: increment_build_number" time="0.844586">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: cocoapods" time="5.270165">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: clear_derived_data" time="2.185315">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: gym" time="213.955168">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: Switch to ios beta lane" time="0.002035">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: crashlytics" time="18.711407">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  VIPTemplate
+
+  Created by Tue Nguyen on 9/27/17.
+  Copyright © 2017 Savvycom. All rights reserved.
+*/
+
+// MARK: main screen
+"home.title" = "Explore";
+"myvideos.title" = "My Videos";
+"favorites.title" = "Favorites";
+"profile.title" = "Profile";
+
